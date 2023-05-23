@@ -1,0 +1,57 @@
+/* Common Styles */
+* {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  .center {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  input:focus {
+    border: solid 0.1rem orangered;
+    outline: solid 0.1rem wheat;
+  }
+  
+  body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: linear-gradient(90deg, yellow,orange,orangered);
+    position: relative;
+  }
+  
+  .search-container {
+    min-height: 300px;
+    min-width: 20rem;
+    position: absolute;
+    top: 50%;
+  }
+  
+  .search-container input,
+  .search-container .suggestions {
+    background-image: linear-gradient(90deg, rgba(255,255,0,0.7),rgba(255,165,0,0.7));
+  }
+  
+  .search-container input {
+    min-height: 2.5rem;
+    min-width: 100%;
+    border-bottom: solid 0.1rem orangered;
+    outline: none;
+    padding: 0.5rem;
+  }
+  
+  .search-container .suggestions {
+    min-height: fit-content;
+    min-width: 100%;
+  }
+  
+  ul li {
+    padding: 0.5rem;
+  }
+  
+  
